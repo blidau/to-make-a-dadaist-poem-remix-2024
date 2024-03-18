@@ -54,7 +54,13 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `During the winter of 1927-28 Federal government officials made a strange and secret investigation of certain conditions in the ancient Massachusetts seaport of Innsmouth. The public first learned of it in February, when a vast series of raids and arrests occurred, followed by the deliberate burning and dynamiting—under suitable precautions—of an enormous number of crumbling, worm-eaten, and supposedly empty houses along the abandoned waterfront. Uninquiring souls let this occurrence pass as one of the major clashes in a spasmodic war on liquor.
+
+Keener news-followers, however, wondered at the prodigious number of arrests, the abnormally large force of men used in making them, and the secrecy surrounding the disposal of the prisoners. No trials, or even definite charges, were reported; nor were any of the captives seen thereafter in the regular jails of the nation. There were vague statements about disease and concentration camps, and later about dispersal in various naval and military prisons, but nothing positive ever developed.
+
+Complaints from many liberal organizations were met with long confidential discussions, and representatives were taken on trips to certain camps and prisons. As a result, these societies became surprisingly passive and reticent. Newspaper men were harder to manage, but seemed largely to cooperate with the government in the end. Only one paper—a tabloid always discounted because of its wild policy—mentioned the deep-diving submarine that discharged torpedoes downward in the marine abyss just beyond Devil Reef. That item, gathered by chance in a haunt of sailors, seemed indeed rather far-fetched; since the low, black reef lies a full mile and a half out from Innsmouth Harbor.
+
+But at last I am going to defy the ban on speech about this thing. Results, I am certain, are so thorough that no public harm save a shock of repulsion could ever accrue from a hinting of what was found by those horrified raiders at Innsmouth. For my contact with this affair has been closer than that of any other layman, and I have carried away impressions which are yet to drive me to drastic measures.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +82,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 9 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
